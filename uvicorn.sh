@@ -1,7 +1,9 @@
 #!/bin/bash
-set -a
-source .env
-set +a
+
+# Lines for local .env
+# set -a
+# source .env
+# set +a
 
 exec uvicorn app.main:app \
   --host 0.0.0.0 \
